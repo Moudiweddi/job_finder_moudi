@@ -1,0 +1,77 @@
+[
+  {
+    "company": "Google LLC.",
+    "logoUrl": "https://cdn1.iconfinder.com/data/icons/google-s-logo/150/Google_Icons-09-512.png",
+    "isMark": "false",
+    "title": "Software Engineer",
+    "location": "New York, NY",
+    "url": "http://example.com/jobs/1",
+    "time": "Full Time",
+    "req": [
+      "Expert in Java and Python",
+      "Experience with cloud services (AWS, GCP)",
+      "Strong problem-solving skills",
+      "Ability to work in a collaborative environment"
+    ]
+  },
+  {
+    "company": "Apple Inc.",
+    "logoUrl": "https://pngimg.com/uploads/apple_logo/apple_logo_PNG19697.png",
+    "isMark": "true",
+    "title": "UX/UI Designer",
+    "location": "Cupertino, CA",
+    "url": "http://example.com/jobs/2",
+    "time": "Full Time",
+    "req": [
+      "Proficient in Adobe Creative Suite",
+      "Experience with prototyping tools like Sketch or Figma",
+      "Understanding of user-centered design principles",
+      "Ability to create visually appealing designs"
+    ]
+  },
+  {
+    "company": "Microsoft Corp.",
+    "logoUrl": "https://mailmeteor.com/logos/assets/PNG/Microsoft_Logo_256px.png",
+    "isMark": "false",
+    "title": "Data Scientist",
+    "location": "Redmond, WA",
+    "url": "http://example.com/jobs/3",
+    "time": "Part Time",
+    "req": [
+      "Strong background in statistics and machine learning",
+      "Proficiency in programming languages like R or Python",
+      "Experience with big data technologies (Hadoop, Spark)",
+      "Ability to analyze complex data sets"
+    ]
+  },
+  {
+    "company": "Amazon.com Inc.",
+    "logoUrl": "https://pngimg.com/uploads/amazon/amazon_PNG21.png",
+    "isMark": "true",
+    "title": "Marketing Manager",
+    "location": "Seattle, WA",
+    "url": "http://example.com/jobs/4",
+    "time": "Full Time",
+    "req": [
+      "Strategic thinking and planning skills",
+      "Experience in digital marketing and SEO",
+      "Ability to manage cross-functional teams",
+      "Strong analytical and communication skills"
+    ]
+  },
+  {
+    "company": "Facebook, Inc.",
+    "logoUrl": "https://upload.wikimedia.org/wikipedia/commons/6/6c/Facebook_Logo_2023.png",
+    "isMark": "false",
+    "title": "Product Manager",
+    "location": "Menlo Park, CA",
+    "url": "http://example.com/jobs/5",
+    "time": "2 Weeks",
+    "req": [
+      "Experience in product lifecycle management",
+      "Understanding of social media platforms",
+      "Ability to drive product strategy and roadmap",
+      "Strong leadership and decision-making skills"
+    ]
+  }
+]
