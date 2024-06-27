@@ -1,40 +1,20 @@
-import 'dart:convert';
-
+// search_page.dart
 import 'package:flutter/material.dart';
-import 'package:flutter/services.dart';
-import 'package:job_finder_app/models/job.dart';
+import 'package:job_finder_app/services/job_provider.dart';
+import 'package:provider/provider.dart';
+
 import 'package:job_finder_app/screens/search/widgets/search_list.dart';
 import 'package:job_finder_app/screens/search/widgets/search_app_bar.dart';
 import 'package:job_finder_app/screens/search/widgets/search_input.dart';
 import 'package:job_finder_app/screens/search/widgets/search_option.dart';
 
-class SearchPage extends StatefulWidget {
-  SearchPage({super.key});
-
-  @override
-  State<SearchPage> createState() => _SearchPageState();
-}
-
-class _SearchPageState extends State<SearchPage> {
-  List<Job> _jobs = [];
-  @override
-  void initState() {
-    super.initState();
-    _loadJobs();
-  }
-
-  Future<void> _loadJobs() async {
-    final String response =
-        await rootBundle.loadString('assets/json/jobs.json');
-    final List<dynamic> jsonData = jsonDecode(response);
-    setState(() {
-      _jobs = jsonData.map((job) => Job.fromJson(job)).toList();
-    });
-  }
+class SearchPage extends StatelessWidget {
+  const SearchPage({super.key});
 
   @override
   Widget build(BuildContext context) {
-    // List<Job> jobList = []; // Initialize with your list of jobs
+    final jobProvider = Provider.of<JobProvider>(context);
+    final jobs = jobProvider.jobs;
 
     return Scaffold(
       body: SafeArea(
@@ -59,9 +39,7 @@ class _SearchPageState extends State<SearchPage> {
                 const SearchInput(),
                 SearchOption(),
                 Expanded(
-                  child: SearchList(
-                    jobList: _jobs,
-                  ),
+                  child: SearchList(jobList: jobs),
                 ),
               ],
             ),
