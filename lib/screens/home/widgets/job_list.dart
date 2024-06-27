@@ -1,4 +1,3 @@
-// job_list.dart
 import 'package:flutter/material.dart';
 import 'package:job_finder_app/services/job_provider.dart';
 import 'package:provider/provider.dart';

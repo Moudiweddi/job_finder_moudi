@@ -44,7 +44,7 @@ class SearchCard extends StatelessWidget {
           GestureDetector(
             onTap: () {
               Navigator.of(context).push(
-                MaterialPageRoute(builder: (context) => SearchPage()),
+                MaterialPageRoute(builder: (context) => const SearchPage()),
               );
             },
             child: Container(
